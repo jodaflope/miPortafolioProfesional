@@ -1,0 +1,180 @@
+/*Night Mode*/
+body {
+    background-color: #151B26;
+    color: white;
+    }
+  
+body.night-mode {
+    background-color: #F2F2F2;
+    color: black;
+    }
+main {
+        min-height: 100%;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+      }
+  /*Switch*/
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    float: right;
+    }
+.slider.round {
+    border-radius: 34px;
+    }
+  /*Switch hide input*/
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+  /*Switch Day*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #40CFFF;
+    transition: .4s;
+    border-radius: 34px;
+    }
+    /*Switch Night*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: yellow;
+    transition: 1s;
+    border-radius: 50%;
+    }
+    .switch input:checked + .slider {
+    background-color: #151B26;
+    }
+    .switch input:checked + .slider:before {
+    transform: translateX(26px);
+    }
+    /*Columns*/
+    .col{
+        margin-top: 10px;
+    }
+    /*Profile picture*/
+    .profile-picture{
+        border-radius: 50%;
+        border: 5px solid grey;
+        height: auto;
+        width: 150px;
+        float: left;
+        z-index: 2;
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
+     /*banner*/
+     .banner{
+        width: 700px;
+        height: 200px;
+        z-index: 1;
+      }
+/*profile picture and banner*/
+.container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .container img {
+    display: block;
+  }
+
+    /*Footer*/
+    footer {
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        height: 50px;
+        float: right;
+      }
+      footer a{
+        padding-right: 20px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 25px;
+      }
+     /*General Info from header*/
+     .General-Info div {
+        text-align: left;    
+        }
+    .codeknown p{
+        display: inline-block;
+        margin-right: 10px;
+        text-align: left;    
+    }
+    .other-info p{
+        display: inline-block;
+        margin-right: 10px;
+        text-align: left;
+    }
+    /*Twitter post*/
+    .tweet {
+      border-radius: 8px;
+      border: 1px solid grey;
+      padding: 10px;
+      width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tweet button{
+      border-radius: 4px;
+      color: inherit;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+    .tweet button:hover{
+      text-decoration: none;
+      }
+      .profile-picture-post {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid grey;
+      }
+      h3 a{
+        margin: 0;
+        font-size: 15px;
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .tweet p {
+        margin: 10px 0;
+        font-size: 14px;
+        text-align: left;
+      }
+      .tweet button{
+        background-color: transparent;
+        border: none;
+        border-radius: 4px;
+        color: inherit;
+        cursor: pointer;
+        font-size: 20px;
+        text-decoration: none;
+}
+.picture-post{
+  width: 600px;
+  height: auto;
+}
+     
+    
